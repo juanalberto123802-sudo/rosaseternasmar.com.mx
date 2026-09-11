@@ -1,0 +1,1792 @@
+<!DOCTYPE html>```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rosas Eternas Mar - Rosas preservadas para momentos inolvidables.">
+<title>Rosas Eternas Mar | Regalos que duran para siempre</title>
+
+<style>
+:root{
+  --rose:#b76e79;
+  --rose-dark:#8f4653;
+  --pink:#f8e7ea;
+  --cream:#fffaf7;
+  --gold:#c49a5a;
+  --dark:#292124;
+  --text:#594f52;
+  --white:#fff;
+  --border:#eadde0;
+  --shadow:0 18px 45px rgba(80,40,50,.12);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Georgia,"Times New Roman",serif;
+  background:var(--cream);
+  color:var(--text);
+  line-height:1.6;
+}
+
+button,
+input,
+textarea,
+select{
+  font:inherit;
+}
+
+button{
+  cursor:pointer;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:min(1150px,92%);
+  margin:auto;
+}
+
+/* HEADER */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,250,247,.96);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+
+.navbar{
+  min-height:75px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:1.6rem;
+  font-weight:bold;
+  color:var(--dark);
+}
+
+.logo span{
+  color:var(--rose);
+}
+
+.nav-links{
+  display:flex;
+  gap:28px;
+  align-items:center;
+  list-style:none;
+}
+
+.nav-links a{
+  font-size:.95rem;
+  font-weight:bold;
+}
+
+.nav-links a:hover{
+  color:var(--rose);
+}
+
+.menu{
+  display:none;
+  border:0;
+  background:none;
+  font-size:1.7rem;
+}
+
+.cart-btn{
+  border:0;
+  background:var(--rose);
+  color:white;
+  padding:10px 17px;
+  border-radius:25px;
+  font-weight:bold;
+  position:relative;
+}
+
+.cart-count{
+  position:absolute;
+  top:-7px;
+  right:-7px;
+  width:21px;
+  height:21px;
+  background:var(--dark);
+  color:white;
+  border-radius:50%;
+  font-size:.72rem;
+  display:grid;
+  place-items:center;
+}
+
+/* HERO */
+
+.hero{
+  min-height:680px;
+  display:flex;
+  align-items:center;
+  background:
+    radial-gradient(circle at 85% 25%,#f4d5da,transparent 30%),
+    linear-gradient(135deg,#fffaf7,#f9e9eb);
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  align-items:center;
+  gap:70px;
+}
+
+.eyebrow{
+  color:var(--rose-dark);
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:.78rem;
+  font-weight:bold;
+  margin-bottom:18px;
+}
+
+.hero h1{
+  color:var(--dark);
+  font-size:clamp(3rem,6vw,5.3rem);
+  line-height:1.02;
+  margin-bottom:25px;
+}
+
+.hero h1 span{
+  color:var(--rose);
+  font-style:italic;
+}
+
+.hero p{
+  font-family:Arial,sans-serif;
+  color:var(--text);
+  font-size:1.08rem;
+  max-width:550px;
+  margin-bottom:30px;
+}
+
+.buttons{
+  display:flex;
+  gap:13px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  border:0;
+  padding:14px 24px;
+  border-radius:30px;
+  font-weight:bold;
+  transition:.25s;
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.btn-primary{
+  background:var(--rose);
+  color:white;
+  box-shadow:0 8px 20px rgba(183,110,121,.25);
+}
+
+.btn-primary:hover{
+  background:var(--rose-dark);
+  transform:translateY(-2px);
+}
+
+.btn-outline{
+  background:white;
+  border:1px solid var(--border);
+  color:var(--dark);
+}
+
+.hero-card{
+  background:white;
+  padding:20px;
+  border-radius:30px;
+  box-shadow:var(--shadow);
+  transform:rotate(2deg);
+}
+
+.flower-placeholder{
+  min-height:480px;
+  border-radius:22px;
+  background:
+    radial-gradient(circle at 50% 35%,#fff 0 5%,transparent 6%),
+    linear-gradient(145deg,#d58b97,#8f4653);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:5rem;
+  text-align:center;
+}
+
+.flower-placeholder span{
+  font-size:6rem;
+}
+
+/* SECTION */
+
+section{
+  padding:90px 0;
+}
+
+.section-title{
+  text-align:center;
+  max-width:700px;
+  margin:0 auto 50px;
+}
+
+.section-title h2{
+  color:var(--dark);
+  font-size:clamp(2.2rem,4vw,3.3rem);
+  margin-bottom:12px;
+}
+
+.section-title p{
+  font-family:Arial,sans-serif;
+  color:#756b6e;
+}
+
+/* BENEFITS */
+
+.benefits{
+  background:white;
+}
+
+.benefit-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.benefit{
+  text-align:center;
+  padding:35px 25px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:#fffdfc;
+}
+
+.icon{
+  font-size:2.5rem;
+  margin-bottom:15px;
+}
+
+.benefit h3{
+  color:var(--dark);
+  margin-bottom:8px;
+}
+
+.benefit p{
+  font-family:Arial,sans-serif;
+  color:#756b6e;
+}
+
+/* PRODUCTS */
+
+.products{
+  background:#fff8f9;
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.product{
+  background:white;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 8px 30px rgba(80,40,50,.07);
+  transition:.25s;
+}
+
+.product:hover{
+  transform:translateY(-7px);
+  box-shadow:var(--shadow);
+}
+
+.product-img{
+  height:300px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:4rem;
+}
+
+.img-one{
+  background:linear-gradient(145deg,#d68a97,#8e4553);
+}
+
+.img-two{
+  background:linear-gradient(145deg,#e3b3bd,#b66b78);
+}
+
+.img-three{
+  background:linear-gradient(145deg,#cda88b,#80634d);
+}
+
+.product-info{
+  padding:23px;
+}
+
+.product-info h3{
+  color:var(--dark);
+  font-size:1.4rem;
+  margin-bottom:7px;
+}
+
+.product-info p{
+  font-family:Arial,sans-serif;
+  color:#756b6e;
+  font-size:.9rem;
+  margin-bottom:15px;
+}
+
+.stars{
+  color:#c49a5a;
+  margin-bottom:8px;
+}
+
+.price{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:17px;
+}
+
+.price strong{
+  color:var(--rose-dark);
+  font-size:1.6rem;
+}
+
+.old{
+  color:#999;
+  text-decoration:line-through;
+}
+
+.product .btn{
+  width:100%;
+}
+
+/* OFFER */
+
+.offer{
+  background:var(--dark);
+  color:white;
+  text-align:center;
+}
+
+.offer h2{
+  font-size:clamp(2.3rem,4vw,3.4rem);
+  margin-bottom:10px;
+}
+
+.offer p{
+  font-family:Arial,sans-serif;
+  color:#ddd;
+}
+
+.timer{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin:30px 0;
+}
+
+.timer-box{
+  min-width:80px;
+  padding:12px;
+  background:#3b3134;
+  border-radius:12px;
+}
+
+.timer-box strong{
+  display:block;
+  font-size:1.8rem;
+}
+
+.timer-box span{
+  font-family:Arial,sans-serif;
+  font-size:.7rem;
+  color:#bbb;
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+  background:white;
+}
+
+.testimonial-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.testimonial{
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:30px;
+}
+
+.testimonial p{
+  font-family:Arial,sans-serif;
+  margin-bottom:18px;
+}
+
+.author{
+  font-weight:bold;
+  color:var(--rose-dark);
+}
+
+/* CTA */
+
+.cta{
+  text-align:center;
+}
+
+.cta-box{
+  padding:70px 30px;
+  border-radius:30px;
+  background:
+    radial-gradient(circle at 20% 30%,#f5d5da,transparent 25%),
+    linear-gradient(135deg,#f9e5e8,#f3d4d9);
+}
+
+.cta-box h2{
+  color:var(--dark);
+  font-size:clamp(2.3rem,5vw,3.7rem);
+  margin-bottom:12px;
+}
+
+.cta-box p{
+  font-family:Arial,sans-serif;
+  margin-bottom:25px;
+}
+
+/* FAQ */
+
+.faq{
+  background:#fff8f9;
+}
+
+.faq-list{
+  max-width:800px;
+  margin:auto;
+}
+
+.faq-item{
+  background:white;
+  border:1px solid var(--border);
+  margin-bottom:12px;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.question{
+  width:100%;
+  background:white;
+  border:0;
+  padding:20px;
+  display:flex;
+  justify-content:space-between;
+  text-align:left;
+  color:var(--dark);
+  font-weight:bold;
+}
+
+.answer{
+  display:none;
+  padding:0 20px 20px;
+  font-family:Arial,sans-serif;
+  color:#756b6e;
+}
+
+.faq-item.active .answer{
+  display:block;
+}
+
+/* FOOTER */
+
+footer{
+  background:#211b1d;
+  color:white;
+  padding:50px 0 25px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:40px;
+  margin-bottom:35px;
+}
+
+footer h3{
+  margin-bottom:12px;
+}
+
+footer p,
+footer a{
+  font-family:Arial,sans-serif;
+  color:#bbb;
+}
+
+footer ul{
+  list-style:none;
+}
+
+footer li{
+  margin-bottom:7px;
+}
+
+.copyright{
+  text-align:center;
+  border-top:1px solid #3b3134;
+  padding-top:20px;
+  font-family:Arial,sans-serif;
+  color:#888;
+}
+
+/* CART */
+
+.overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.55);
+  z-index:2000;
+  opacity:0;
+  pointer-events:none;
+  transition:.3s;
+}
+
+.overlay.active{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.cart{
+  position:absolute;
+  right:0;
+  top:0;
+  height:100%;
+  width:min(420px,100%);
+  background:white;
+  padding:25px;
+  transform:translateX(100%);
+  transition:.3s;
+  display:flex;
+  flex-direction:column;
+}
+
+.overlay.active .cart{
+  transform:translateX(0);
+}
+
+.cart-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid var(--border);
+  padding-bottom:20px;
+}
+
+.close{
+  border:0;
+  background:none;
+  font-size:1.6rem;
+}
+
+.cart-items{
+  flex:1;
+  overflow:auto;
+  padding:20px 0;
+}
+
+.cart-item{
+  display:flex;
+  justify-content:space-between;
+  border-bottom:1px solid var(--border);
+  padding:15px 0;
+}
+
+.cart-item h4{
+  color:var(--dark);
+}
+
+.cart-item small{
+  font-family:Arial,sans-serif;
+}
+
+.remove{
+  border:0;
+  background:none;
+  color:#b33;
+  font-size:.8rem;
+}
+
+.cart-total{
+  border-top:1px solid var(--border);
+  padding-top:20px;
+}
+
+.total{
+  display:flex;
+  justify-content:space-between;
+  font-weight:bold;
+  font-size:1.3rem;
+  margin-bottom:15px;
+}
+
+.empty{
+  text-align:center;
+  color:#888;
+  padding:50px 0;
+}
+
+/* MODAL */
+
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.65);
+  z-index:3000;
+  display:none;
+  place-items:center;
+  padding:20px;
+}
+
+.modal.active{
+  display:grid;
+}
+
+.modal-content{
+  background:white;
+  width:min(550px,100%);
+  max-height:90vh;
+  overflow:auto;
+  border-radius:20px;
+  padding:30px;
+  position:relative;
+}
+
+.modal-content h2{
+  color:var(--dark);
+  margin-bottom:7px;
+}
+
+.modal-content>p{
+  font-family:Arial,sans-serif;
+  color:#777;
+  margin-bottom:25px;
+}
+
+.form-group{
+  margin-bottom:16px;
+}
+
+.form-group label{
+  display:block;
+  color:var(--dark);
+  font-weight:bold;
+  margin-bottom:6px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+  width:100%;
+  border:1px solid var(--border);
+  border-radius:9px;
+  padding:12px;
+  outline:none;
+}
+
+.success{
+  display:none;
+  text-align:center;
+}
+
+.success.show{
+  display:block;
+}
+
+.success-icon{
+  font-size:4rem;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:850px){
+
+  .menu{
+    display:block;
+  }
+
+  .nav-links{
+    display:none;
+    position:absolute;
+    top:75px;
+    left:0;
+    right:0;
+    background:var(--cream);
+    flex-direction:column;
+    padding:25px;
+    border-bottom:1px solid var(--border);
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .hero-grid,
+  .benefit-grid,
+  .product-grid,
+  .testimonial-grid,
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding:60px 0;
+  }
+
+  .hero-card{
+    transform:none;
+  }
+
+  .flower-placeholder{
+    min-height:350px;
+  }
+
+  .product-grid{
+    max-width:500px;
+    margin:auto;
+  }
+
+}
+
+@media(max-width:500px){
+
+  section{
+    padding:65px 0;
+  }
+
+  .timer{
+    gap:5px;
+  }
+
+  .timer-box{
+    min-width:65px;
+  }
+
+  .timer-box strong{
+    font-size:1.4rem;
+  }
+
+  .buttons .btn{
+    width:100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container navbar">
+
+    <a href="#" class="logo">
+      Rosas <span>Eternas Mar</span>
+    </a>
+
+    <button class="menu" id="menu">☰</button>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Rosas</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+        <li>
+          <button class="cart-btn" id="openCart">
+            🛒 Carrito
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        Un detalle para recordar
+      </div>
+
+      <h1>
+        El amor que
+        <span>dura para siempre.</span>
+      </h1>
+
+      <p>
+        Regala una rosa eterna y convierte un momento especial
+        en un recuerdo que permanecerá por años.
+      </p>
+
+      <div class="buttons">
+
+        <a href="#productos" class="btn btn-primary">
+          🌹 Ver colección
+        </a>
+
+        <a href="#nosotros" class="btn btn-outline">
+          Conoce nuestra historia
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="hero-card">
+
+      <div class="flower-placeholder">
+        <span>🌹</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- BENEFICIOS -->
+
+<section class="benefits" id="nosotros">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Un regalo que habla por ti</h2>
+      <p>
+        Cada rosa está preparada para conservar su belleza
+        y convertirse en un detalle inolvidable.
+      </p>
+    </div>
+
+    <div class="benefit-grid">
+
+      <article class="benefit">
+        <div class="icon">🌹</div>
+        <h3>Rosas preservadas</h3>
+        <p>
+          Belleza natural conservada para durar mucho más
+          que una rosa tradicional.
+        </p>
+      </article>
+
+      <article class="benefit">
+        <div class="icon">🎁</div>
+        <h3>Presentación especial</h3>
+        <p>
+          Cada pedido se prepara con cuidado para que
+          regalar sea una experiencia.
+        </p>
+      </article>
+
+      <article class="benefit">
+        <div class="icon">💖</div>
+        <h3>Hecho con amor</h3>
+        <p>
+          Diseños pensados para aniversarios, cumpleaños,
+          propuestas y momentos especiales.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PRODUCTOS -->
+
+<section class="products" id="productos">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Nuestra colección</h2>
+      <p>
+        Elige el detalle perfecto para esa persona especial.
+      </p>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product">
+
+        <div class="product-img img-one">
+          🌹
+        </div>
+
+        <div class="product-info">
+
+          <div class="stars">★★★★★</div>
+
+          <h3>Rosa Eterna Clásica</h3>
+
+          <p>
+            Una rosa preservada presentada con elegancia.
+          </p>
+
+          <div class="price">
+            <strong>$899</strong>
+            <span class="old">$1,099</span>
+          </div>
+
+          <button
+            class="btn btn-primary add-product"
+            data-id="1"
+            data-name="Rosa Eterna Clásica"
+            data-price="899"
+          >
+            Agregar al carrito
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <article class="product">
+
+        <div class="product-img img-two">
+          💐
+        </div>
+
+        <div class="product-info">
+
+          <div class="stars">★★★★★</div>
+
+          <h3>Arreglo Mar</h3>
+
+          <p>
+            Una composición especial para sorprender.
+          </p>
+
+          <div class="price">
+            <strong>$1,299</strong>
+            <span class="old">$1,599</span>
+          </div>
+
+          <button
+            class="btn btn-primary add-product"
+            data-id="2"
+            data-name="Arreglo Mar"
+            data-price="1299"
+          >
+            Agregar al carrito
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <article class="product">
+
+        <div class="product-img img-three">
+          🌹
+        </div>
+
+        <div class="product-info">
+
+          <div class="stars">★★★★★</div>
+
+          <h3>Edición Especial</h3>
+
+          <p>
+            Nuestro diseño premium para una ocasión única.
+          </p>
+
+          <div class="price">
+            <strong>$1,799</strong>
+            <span class="old">$2,199</span>
+          </div>
+
+          <button
+            class="btn btn-primary add-product"
+            data-id="3"
+            data-name="Edición Especial"
+            data-price="1799"
+          >
+            Agregar al carrito
+          </button>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- OFERTA -->
+
+<section class="offer">
+
+  <div class="container">
+
+    <h2>✨ Oferta especial</h2>
+
+    <p>
+      Obtén un precio especial por tiempo limitado.
+    </p>
+
+    <div class="timer">
+
+      <div class="timer-box">
+        <strong id="days">00</strong>
+        <span>DÍAS</span>
+      </div>
+
+      <div class="timer-box">
+        <strong id="hours">00</strong>
+        <span>HORAS</span>
+      </div>
+
+      <div class="timer-box">
+        <strong id="minutes">00</strong>
+        <span>MIN</span>
+      </div>
+
+      <div class="timer-box">
+        <strong id="seconds">00</strong>
+        <span>SEG</span>
+      </div>
+
+    </div>
+
+    <a href="#productos" class="btn btn-primary">
+      Aprovechar oferta
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- TESTIMONIOS -->
+
+<section class="testimonials">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Ellos ya regalaron una Rosa Eterna</h2>
+      <p>
+        Algunas palabras de nuestros clientes.
+      </p>
+    </div>
+
+    <div class="testimonial-grid">
+
+      <article class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>
+          “La rosa llegó preciosa y la presentación fue
+          increíble. Mi novia quedó encantada.”
+        </p>
+        <div class="author">— Carlos</div>
+      </article>
+
+      <article class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>
+          “Fue el regalo perfecto para nuestro aniversario.
+          Todo llegó en excelentes condiciones.”
+        </p>
+        <div class="author">— Mariana</div>
+      </article>
+
+      <article class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>
+          “Muy bonito detalle. Se nota el cuidado con el que
+          preparan cada arreglo.”
+        </p>
+        <div class="author">— Alejandro</div>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="faq" id="faq">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Preguntas frecuentes</h2>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="question">
+          ¿Cuánto dura una rosa eterna?
+          <span>+</span>
+        </button>
+
+        <div class="answer">
+          Una rosa preservada puede conservar su belleza durante
+          varios años si se mantiene alejada de la humedad,
+          el agua y la luz solar directa.
+        </div>
+      </div>
+
+
+      <div class="faq-item">
+        <button class="question">
+          ¿Cómo debo cuidar mi rosa?
+          <span>+</span>
+        </button>
+
+        <div class="answer">
+          No necesita agua. Evita colocarla en lugares húmedos
+          o donde reciba sol directo.
+        </div>
+      </div>
+
+
+      <div class="faq-item">
+        <button class="question">
+          ¿Hacen entregas?
+          <span>+</span>
+        </button>
+
+        <div class="answer">
+          Sí. Podemos configurar las zonas y tarifas de entrega
+          según la cobertura de tu negocio.
+        </div>
+      </div>
+
+
+      <div class="faq-item">
+        <button class="question">
+          ¿Puedo agregar una dedicatoria?
+          <span>+</span>
+        </button>
+
+        <div class="answer">
+          Sí. Puedes personalizar el pedido con un mensaje
+          especial para la persona que recibirá el regalo.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+  <div class="container">
+
+    <div class="cta-box">
+
+      <h2>Haz que este momento sea eterno.</h2>
+
+      <p>
+        Sorprende a alguien especial con una Rosa Eterna Mar.
+      </p>
+
+      <a href="#productos" class="btn btn-primary">
+        🌹 Elegir mi rosa
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <h3>Rosas Eternas Mar</h3>
+        <p>
+          Detalles que conservan la belleza de los momentos
+          que más importan.
+        </p>
+      </div>
+
+      <div>
+        <h3>Información</h3>
+        <ul>
+          <li><a href="#productos">Colección</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contacto</h3>
+        <ul>
+          <li><a href="mailto:ventas@rosaseternasmar.com">
+            ventas@rosaseternasmar.com
+          </a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Rosas Eternas Mar · Todos los derechos reservados.
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- CARRITO -->
+
+<div class="overlay" id="overlay">
+
+  <aside class="cart">
+
+    <div class="cart-head">
+      <h2>Tu carrito</h2>
+      <button class="close" id="closeCart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <div class="empty">
+        Tu carrito está vacío 🌹
+      </div>
+    </div>
+
+    <div class="cart-total">
+
+      <div class="total">
+        <span>Total</span>
+        <span id="total">$0</span>
+      </div>
+
+      <button
+        class="btn btn-primary"
+        id="checkout"
+        style="width:100%"
+      >
+        Finalizar pedido
+      </button>
+
+    </div>
+
+  </aside>
+
+</div>
+
+
+<!-- CHECKOUT -->
+
+<div class="modal" id="modal">
+
+  <div class="modal-content">
+
+    <button class="close" id="closeModal">×</button>
+
+    <div id="formContainer">
+
+      <h2>Finalizar pedido 🌹</h2>
+
+      <p>
+        Déjanos tus datos y nos pondremos en contacto contigo
+        para confirmar tu pedido.
+      </p>
+
+      <form id="orderForm">
+
+        <div class="form-group">
+          <label>Nombre completo</label>
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="Tu nombre"
+          >
+        </div>
+
+        <div class="form-group">
+          <label>WhatsApp</label>
+          <input
+            type="tel"
+            id="phone"
+            required
+            placeholder="Tu número"
+          >
+        </div>
+
+        <div class="form-group">
+          <label>Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="tu@email.com"
+          >
+        </div>
+
+        <div class="form-group">
+          <label>Dirección de entrega</label>
+          <textarea
+            id="address"
+            rows="3"
+            required
+            placeholder="Dirección completa"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Mensaje para la tarjeta</label>
+          <textarea
+            id="message"
+            rows="3"
+            placeholder="Escribe tu dedicatoria..."
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-primary"
+          style="width:100%"
+        >
+          Confirmar pedido
+        </button>
+
+      </form>
+
+    </div>
+
+
+    <div class="success" id="success">
+
+      <div class="success-icon">🌹</div>
+
+      <h2>¡Gracias por tu pedido!</h2>
+
+      <p>
+        Hemos recibido tus datos correctamente.
+        Pronto nos pondremos en contacto contigo.
+      </p>
+
+      <button
+        class="btn btn-primary"
+        id="successClose"
+        style="margin-top:20px"
+      >
+        Cerrar
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script>
+
+/* MENU */
+
+const menu = document.getElementById("menu");
+const navLinks = document.getElementById("navLinks");
+
+menu.addEventListener("click",()=>{
+  navLinks.classList.toggle("active");
+});
+
+
+/* PRODUCTOS */
+
+let cart = JSON.parse(
+  localStorage.getItem("rosasCart")
+) || [];
+
+
+function saveCart(){
+  localStorage.setItem(
+    "rosasCart",
+    JSON.stringify(cart)
+  );
+}
+
+
+function updateCart(){
+
+  const count = cart.reduce(
+    (sum,item)=>sum+item.quantity,
+    0
+  );
+
+  document.getElementById("cartCount").textContent = count;
+
+  const container =
+    document.getElementById("cartItems");
+
+  if(cart.length===0){
+
+    container.innerHTML =
+      '<div class="empty">Tu carrito está vacío 🌹</div>';
+
+    document.getElementById("total").textContent="$0";
+
+    return;
+  }
+
+
+  container.innerHTML = cart.map(item=>`
+
+    <div class="cart-item">
+
+      <div>
+        <h4>${item.name}</h4>
+        <small>
+          $${item.price.toLocaleString()}
+          × ${item.quantity}
+        </small>
+      </div>
+
+      <button
+        class="remove"
+        onclick="removeItem(${item.id})"
+      >
+        Eliminar
+      </button>
+
+    </div>
+
+  `).join("");
+
+
+  const total = cart.reduce(
+    (sum,item)=>
+      sum+(item.price*item.quantity),
+    0
+  );
+
+  document.getElementById("total").textContent =
+    "$"+total.toLocaleString();
+}
+
+
+function addItem(id,name,price){
+
+  const existing =
+    cart.find(item=>item.id===id);
+
+  if(existing){
+    existing.quantity++;
+  }else{
+    cart.push({
+      id,
+      name,
+      price,
+      quantity:1
+    });
+  }
+
+  saveCart();
+  updateCart();
+
+  document
+    .getElementById("overlay")
+    .classList.add("active");
+}
+
+
+function removeItem(id){
+
+  cart =
+    cart.filter(item=>item.id!==id);
+
+  saveCart();
+  updateCart();
+}
+
+
+document.querySelectorAll(".add-product")
+.forEach(button=>{
+
+  button.addEventListener("click",()=>{
+
+    addItem(
+      Number(button.dataset.id),
+      button.dataset.name,
+      Number(button.dataset.price)
+    );
+
+  });
+
+});
+
+
+/* CARRITO */
+
+document
+  .getElementById("openCart")
+  .addEventListener("click",()=>{
+
+    document
+      .getElementById("overlay")
+      .classList.add("active");
+
+  });
+
+
+document
+  .getElementById("closeCart")
+  .addEventListener("click",()=>{
+
+    document
+      .getElementById("overlay")
+      .classList.remove("active");
+
+  });
+
+
+/* FAQ */
+
+document.querySelectorAll(".question")
+.forEach(question=>{
+
+  question.addEventListener("click",()=>{
+
+    const item =
+      question.parentElement;
+
+    const active =
+      item.classList.contains("active");
+
+    document.querySelectorAll(".faq-item")
+    .forEach(faq=>{
+      faq.classList.remove("active");
+      faq.querySelector("span").textContent="+";
+    });
+
+    if(!active){
+
+      item.classList.add("active");
+      question.querySelector("span")
+        .textContent="−";
+
+    }
+
+  });
+
+});
+
+
+/* COUNTDOWN */
+
+const endDate =
+  new Date(Date.now()+48*60*60*1000);
+
+
+function updateTimer(){
+
+  const now = new Date();
+
+  const difference =
+    endDate-now;
+
+  if(difference<=0){
+    return;
+  }
+
+  const days =
+    Math.floor(
+      difference/(1000*60*60*24)
+    );
+
+  const hours =
+    Math.floor(
+      difference/(1000*60*60)%24
+    );
+
+  const minutes =
+    Math.floor(
+      difference/(1000*60)%60
+    );
+
+  const seconds =
+    Math.floor(
+      difference/1000%60
+    );
+
+
+  document.getElementById("days")
+    .textContent =
+    String(days).padStart(2,"0");
+
+  document.getElementById("hours")
+    .textContent =
+    String(hours).padStart(2,"0");
+
+  document.getElementById("minutes")
+    .textContent =
+    String(minutes).padStart(2,"0");
+
+  document.getElementById("seconds")
+    .textContent =
+    String(seconds).padStart(2,"0");
+}
+
+updateTimer();
+
+setInterval(updateTimer,1000);
+
+
+/* CHECKOUT */
+
+const modal =
+  document.getElementById("modal");
+
+document
+  .getElementById("checkout")
+  .addEventListener("click",()=>{
+
+    if(cart.length===0){
+
+      alert(
+        "Agrega una rosa al carrito primero 🌹"
+      );
+
+      return;
+    }
+
+    document
+      .getElementById("overlay")
+      .classList.remove("active");
+
+    modal.classList.add("active");
+
+  });
+
+
+document
+  .getElementById("closeModal")
+  .addEventListener("click",()=>{
+
+    modal.classList.remove("active");
+
+  });
+
+
+document
+  .getElementById("orderForm")
+  .addEventListener("submit",(event)=>{
+
+    event.preventDefault();
+
+    document
+      .getElementById("formContainer")
+      .style.display="none";
+
+    document
+      .getElementById("success")
+      .classList.add("show");
+
+    cart=[];
+
+    saveCart();
+    updateCart();
+
+  });
+
+
+document
+  .getElementById("successClose")
+  .addEventListener("click",()=>{
+
+    modal.classList.remove("active");
+
+    document
+      .getElementById("formContainer")
+      .style.display="block";
+
+    document
+      .getElementById("success")
+      .classList.remove("show");
+
+    document
+      .getElementById("orderForm")
+      .reset();
+
+  });
+
+
+/* INITIAL */
+
+updateCart();
+
+</script>
+
+</body>
+</html>
+```
